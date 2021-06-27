@@ -1,8 +1,9 @@
-Section
-    Wrapper
-        Card
+Section -- Task
+    Profile
+        Description
             Img
             Info
+            
             Stats
         
             
