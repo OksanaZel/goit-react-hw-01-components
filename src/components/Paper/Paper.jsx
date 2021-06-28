@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { PaperContainer } from './Paper.styles';
+import React from "react";
+import PropTypes from "prop-types";
+import { PaperContainer } from "./Paper.styles";
 
 function Paper({ children, gap, width, text }) {
   return (

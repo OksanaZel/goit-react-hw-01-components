@@ -1,10 +1,9 @@
-import React from 'react';
-import Profile from '../Profile/Profile';
-import Section from '../Section/Section';
-import Wrapper from '../Wrapper/Wrapper';
-import Statistics from '../Statistics/Statistics';
-// import Description from "../Description/Description";
-import './App.css';
+import React from "react";
+import Profile from "../Profile/Profile";
+import Section from "../Section/Section";
+import Wrapper from "../Wrapper/Wrapper";
+import FriendList from "../FriendsList/FriendList";
+import Statistics from "../Statistics/Statistics";
 
 function App() {
   return (
@@ -18,6 +17,10 @@ function App() {
         <Statistics></Statistics>
       </Wrapper>
       <Section text="Friend list section" />
+      <Wrapper>
+        <FriendList></FriendList>
+      </Wrapper>
+      <Section text="Transaction history section" />
       <Wrapper></Wrapper>
     </>
   );

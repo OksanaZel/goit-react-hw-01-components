@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
 export const PaperContainer = styled.div`
   background-color: #fff;

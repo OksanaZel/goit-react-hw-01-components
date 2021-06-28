@@ -1,12 +1,11 @@
-import React from 'react';
-// import PropTypes from "prop-types";
-import { StatsListContainer } from './StatsList.styles';
-import user from '../../data/user.json';
+import React from "react";
+import { StatsListContainer } from "./StatsList.styles";
+import user from "../../data/user.json";
 import {
   StatsListItemContainer,
   StatsLabel,
   StatsQuantity,
-} from '../StatsList/StatsList.styles';
+} from "../StatsList/StatsList.styles";
 
 function StatsList() {
   return (

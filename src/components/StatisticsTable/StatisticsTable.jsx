@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 import {
   StatsListContainer,
   StatsListItemContainer,
   StatsLabel,
   StatsQuantity,
-} from '../StatsList/StatsList.styles';
-import statsData from '../../data/statistical-data.json';
+} from "../StatsList/StatsList.styles";
+import statsData from "../../data/statistical-data.json";
 
 console.log(statsData);
 

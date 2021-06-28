@@ -1,7 +1,7 @@
-import React from 'react';
-import Paper from '../Paper/Paper';
-import { UserName, UserData, Img } from './Description.styles';
-import user from '../../data/user.json';
+import React from "react";
+import Paper from "../Paper/Paper";
+import { UserName, UserData, Img } from "./Description.styles";
+import user from "../../data/user.json";
 
 function Description() {
   return (

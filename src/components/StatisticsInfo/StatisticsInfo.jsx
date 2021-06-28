@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Paper from '../Paper/Paper';
-import { StatisticsInfoTitle } from '../StatisticsInfo/StatisticsInfo.styles';
+import React from "react";
+import PropTypes from "prop-types";
+import Paper from "../Paper/Paper";
+import { StatisticsInfoTitle } from "../StatisticsInfo/StatisticsInfo.styles";
 
 function StatisticsInfo({ text }) {
   return (
