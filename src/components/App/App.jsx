@@ -4,6 +4,7 @@ import Section from "../Section/Section";
 import Wrapper from "../Wrapper/Wrapper";
 import FriendList from "../FriendsList/FriendList";
 import Statistics from "../Statistics/Statistics";
+import TableTransactions from "../TableTransactions/TableTransactions";
 
 function App() {
   return (
@@ -21,7 +22,9 @@ function App() {
         <FriendList></FriendList>
       </Wrapper>
       <Section text="Transaction history section" />
-      <Wrapper></Wrapper>
+      <Wrapper>
+        <TableTransactions></TableTransactions>
+      </Wrapper>
     </>
   );
 }

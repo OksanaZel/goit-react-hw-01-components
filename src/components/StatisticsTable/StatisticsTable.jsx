@@ -7,8 +7,6 @@ import {
 } from "../StatsList/StatsList.styles";
 import statsData from "../../data/statistical-data.json";
 
-console.log(statsData);
-
 function StatisticsTable() {
   return (
     <StatsListContainer>
