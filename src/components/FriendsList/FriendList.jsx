@@ -1,5 +1,5 @@
 import React from "react";
-// import Paper from "../Paper/Paper";
+import PropTypes from "prop-types";
 import {
   FriendsListContainer,
   FriendsListItemContainer,
@@ -8,9 +8,8 @@ import {
   FriendName,
 } from "../FriendsList/FriendList.styles";
 import { Container } from "../Profile/Profile.styles";
-import friends from "../../data/friends.json";
 
-function FriendList() {
+function FriendList({ friends }) {
   return (
     <Container>
       <FriendsListContainer>
@@ -27,5 +26,16 @@ function FriendList() {
     </Container>
   );
 }
+
+FriendList.propTypes = {
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+    }),
+  ),
+};
 
 export default FriendList;

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import {
   TransactionHistory,
   TableHead,
@@ -7,9 +8,9 @@ import {
   TableBody,
   TableData,
 } from "./TableTransactions.styles";
-import transactions from "../../data/transactions.json";
+// import transactions from "../../data/transactions.json";
 
-function TableTransactions() {
+function TableTransactions({ items }) {
   return (
     <TransactionHistory>
       <TableHead>
@@ -20,7 +21,7 @@ function TableTransactions() {
         </TableRow>
       </TableHead>
       <TableBody>
-        {transactions.map(({ id, type, amount, currency }) => (
+        {items.map(({ id, type, amount, currency }) => (
           <TableRow key={id}>
             <TableData>{type}</TableData>
             <TableData>{amount}</TableData>
@@ -31,5 +32,16 @@ function TableTransactions() {
     </TransactionHistory>
   );
 }
+
+TableTransactions.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    }),
+  ),
+};
 
 export default TableTransactions;
