@@ -15,9 +15,7 @@ function FriendList({ friends }) {
       <FriendsListContainer>
         {friends.map(({ id, avatar, name, isOnline }) => (
           <FriendsListItemContainer key={id}>
-            <OnlineStatus
-              bcolor={isOnline ? "lightgreen" : "red"}
-            ></OnlineStatus>
+            <OnlineStatus bcolor={isOnline ? "lightgreen" : "red"} />
             <Avatar src={avatar} alt={name} />
             <FriendName>{name}</FriendName>
           </FriendsListItemContainer>
