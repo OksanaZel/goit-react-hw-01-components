@@ -12,7 +12,7 @@ import {
 function Statistics({ text, stats }) {
   return (
     <Container>
-      <StatisticsTitle>{text}</StatisticsTitle>
+      {text && <StatisticsTitle>{text}</StatisticsTitle>}
       <StatsListContainer>
         {stats.map(({ id, label, percentage }) => (
           <StatsListItemContainer key={id}>
@@ -26,7 +26,7 @@ function Statistics({ text, stats }) {
 }
 
 Statistics.propTypes = {
-  text: PropTypes.string.isRequired,
+  text: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,

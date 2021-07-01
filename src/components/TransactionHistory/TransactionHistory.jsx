@@ -1,18 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
 import {
-  TransactionHistory,
+  TransactionHistoryTable,
   TableHead,
   TableRow,
   TableCell,
   TableBody,
   TableData,
-} from "./TableTransactions.styles";
-// import transactions from "../../data/transactions.json";
+} from "./TransactionHistory.styles";
 
-function TableTransactions({ items }) {
+function TransactionHistory({ items }) {
   return (
-    <TransactionHistory>
+    <TransactionHistoryTable>
       <TableHead>
         <TableRow>
           <TableCell>{"Type"}</TableCell>
@@ -29,11 +28,11 @@ function TableTransactions({ items }) {
           </TableRow>
         ))}
       </TableBody>
-    </TransactionHistory>
+    </TransactionHistoryTable>
   );
 }
 
-TableTransactions.propTypes = {
+TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
@@ -44,4 +43,4 @@ TableTransactions.propTypes = {
   ),
 };
 
-export default TableTransactions;
+export default TransactionHistory;

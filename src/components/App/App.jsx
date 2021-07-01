@@ -4,7 +4,7 @@ import Section from "../Section/Section";
 import Wrapper from "../Wrapper/Wrapper";
 import FriendList from "../FriendsList/FriendList";
 import Statistics from "../Statistics/Statistics";
-import TableTransactions from "../TableTransactions/TableTransactions";
+import TransactionHistory from "../TransactionHistory/TransactionHistory";
 import user from "../../data/user.json";
 import statsData from "../../data/statistical-data.json";
 import friends from "../../data/friends.json";
@@ -29,11 +29,11 @@ function App() {
       </Wrapper>
       <Section text="Friend list section" />
       <Wrapper>
-        <FriendList friends={friends}></FriendList>
+        <FriendList friends={friends} />
       </Wrapper>
       <Section text="Transaction history section" />
       <Wrapper>
-        <TableTransactions items={transactions}></TableTransactions>
+        <TransactionHistory items={transactions} />
       </Wrapper>
     </>
   );
