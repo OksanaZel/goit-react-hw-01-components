@@ -51,6 +51,7 @@ export const StatsListItemContainer = styled.li`
   flex-direction: column;
   padding-top: 15px;
   padding-bottom: 15px;
+  width: 100%;
 `;
 
 export const StatsLabel = styled.span`
