@@ -16,7 +16,7 @@ export const FriendsListItemContainer = styled.li`
 `;
 
 export const OnlineStatus = styled.span`
-  background-color: ${props => props.bcolor};
+  background-color: ${props => (props.isOnline ? "lightgreen" : "red")};
   border: 3px solid #0f1c3f;
   border-radius: 50%;
   box-shadow: 6px 6px 0 0 rgba(15, 28, 63, 0.125);
